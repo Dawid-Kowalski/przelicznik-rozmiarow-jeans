@@ -8,7 +8,8 @@
 		<script type="text/javascript" src="js/script.js"></script>
 	</head>
 	<body>
-		<h1>kalkulator rozmiarów jeansów</h1>
+		<h1>kalkulator rozmiarów jeansów (męskich)</h1>
+<!--form size/body-->
 		<form>
 		  <label class="radio-inline">
 		  	<input type="radio" name="optradio">według rozmiaru
@@ -18,10 +19,68 @@
 		  </label>
 		</form>
 		<div id="size-panel">
-			miejsce na formularz wg rozmiaru
+			<h2>wgedług rozmiaru</h2>
+<!--form size-->
+			<form>
+				<div class="form-group">
+					<label for="trousers-width">W</label>
+				    <select class="form-control" id="trousers-width">
+				      <option>28</option>
+				      <option>29</option>
+				      <option>30</option>
+				      <option>31</option>
+				      <option>32</option>
+				      <option>33</option>
+				      <option>34</option>
+				      <option>36</option>
+				      <option>38</option>
+				      <option>40</option>
+				      <option>42</option>
+				   	</select>
+				</div>
+				<div class="form-group">
+					<label for="trousers-lang">L</label>
+				    <select class="form-control" id="trousers-lang">
+				      <option>30</option>
+				      <option>32</option>
+				      <option>34</option>
+				      <option>36</option>
+				   	</select>
+				</div>
+				<button type="button" class="btn btn-success">przelicz</button>
+			</form>
 		</div>
 		<div id="body-panel">
-			miejsce na formularz wg wymiarów
+			<h2>wgedług wymiarów</h2>
+<!--form body-->
+			<form>
+				<div class="form-group">
+					<label for="body-waist">Obwód w pasie:</label>
+				    <select class="form-control" id="body-waist">
+				      <option>71-73.5</option>
+				      <option>73.5-76</option>
+				      <option>76-78.5</option>
+				      <option>78.5-81</option>
+				      <option>81-83.5</option>
+				      <option>83.5-86</option>
+				      <option>86-88.5</option>
+				      <option>91.5-94</option>
+				      <option>96.5-99</option>
+				      <option>101.5-104</option>
+				      <option>106.5-109</option>
+				   	</select>
+				</div>
+				<div class="form-group">
+					<label for="growth">Wzrost:</label>
+				    <select class="form-control" id="growth">
+				      <option>158-165.5</option>
+				      <option>165.5-173</option>
+				      <option>173-180.5</option>
+				      <option>180.5-188</option>
+				   	</select>
+				</div>
+				<button type="button" class="btn btn-success">przelicz</button>
+			</form>
 		</div>
 	</body>
 </html>
