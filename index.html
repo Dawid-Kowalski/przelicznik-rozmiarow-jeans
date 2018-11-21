@@ -12,13 +12,13 @@
 <!--form size/body-->
 		<form>
 		  <label class="radio-inline">
-		  	<input type="radio" name="optradio">według rozmiaru
+		  	<input type="radio" name="optradio" id="size-radio" onChange="showForm();">według rozmiaru
 		  </label>
 		  <label class="radio-inline">
-		  	<input type="radio" name="optradio">według wymiarów
+		  	<input type="radio" name="optradio" id="body-radio" onChange="showForm();">według wymiarów
 		  </label>
 		</form>
-		<div id="size-panel">
+		<div id="size-panel" hidden>
 			<h2>wgedług rozmiaru</h2>
 <!--form size-->
 			<form>
@@ -50,7 +50,7 @@
 				<button type="button" class="btn btn-success">przelicz</button>
 			</form>
 		</div>
-		<div id="body-panel">
+		<div id="body-panel" hidden>
 			<h2>wgedług wymiarów</h2>
 <!--form body-->
 			<form>
