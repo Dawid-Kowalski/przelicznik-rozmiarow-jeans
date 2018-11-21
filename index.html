@@ -57,29 +57,29 @@
 				<div class="form-group">
 					<label for="body-waist">Obwód w pasie:</label>
 				    <select class="form-control" id="body-waist">
-				      <option>71-73.5</option>
-				      <option>73.5-76</option>
-				      <option>76-78.5</option>
-				      <option>78.5-81</option>
-				      <option>81-83.5</option>
-				      <option>83.5-86</option>
-				      <option>86-88.5</option>
-				      <option>91.5-94</option>
-				      <option>96.5-99</option>
-				      <option>101.5-104</option>
-				      <option>106.5-109</option>
+				      <option value="1">71-73.5</option>
+				      <option value="2">73.5-76</option>
+				      <option value="3">76-78.5</option>
+				      <option value="4">78.5-81</option>
+				      <option value="5">81-83.5</option>
+				      <option value="6">83.5-86</option>
+				      <option value="7">86-88.5</option>
+				      <option value="8">91.5-94</option>
+				      <option value="9">96.5-99</option>
+				      <option value="10">101.5-104</option>
+				      <option value="11">106.5-109</option>
 				   	</select>
 				</div>
 				<div class="form-group">
 					<label for="growth">Wzrost:</label>
 				    <select class="form-control" id="body-growth">
-				      <option>158-165.5</option>
-				      <option>165.5-173</option>
-				      <option>173-180.5</option>
-				      <option>180.5-188</option>
+				      <option value="1">158-165.5</option>
+				      <option value="2">165.5-173</option>
+				      <option value="3">173-180.5</option>
+				      <option value="4">180.5-188</option>
 				   	</select>
 				</div>
-				<button type="button" class="btn btn-success">przelicz</button>
+				<button type="button" class="btn btn-success" onclick="convertBodyToSize();">przelicz</button>
 			</form>
 		</div>
 		<div>
@@ -92,9 +92,9 @@
 		<div>
 			<h3>Dla tej osoby odpowiednie będą spodnie o oznaczeniach: </h3>
 			<p>W:</p>
-			<p>...</p>
+			<p id="width">...</p>
 			<p>L:</p>
-			<p>...</p>
+			<p id="lang">...</p>
 		</div>
 	</body>
 </html>

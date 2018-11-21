@@ -1,5 +1,7 @@
 let textWtoWaist = "";
 let textLToGrowth = "";
+let textwaistToW = "";
+let textGrowthToL = "";
 
 function showForm() {
 	const sizeIsChecked = document.getElementById("size-radio").checked;
@@ -87,6 +89,78 @@ function lToGrowth () {
 			break;
 		case 36:
 			textLToGrowth= "180.5-188";
+			break;
+	}
+}
+
+function convertBodyToSize() {
+
+	const width = document.getElementById("width");
+	const lang = document.getElementById("lang");
+
+	waistToW();
+	growthToL();
+
+	width.innerHTML = textwaistToW ;
+	lang.innerHTML = textGrowthToL;
+
+}
+
+function waistToW () {
+	const waist = parseInt(document.getElementById("body-waist").value);
+
+	switch(waist) {
+		case 1:
+			textwaistToW  = "28";
+			break;
+		case 2:
+			textwaistToW  = "29";
+			break;
+		case 3:
+			textwaistToW  = "30";
+			break;
+		case 4:
+			textwaistToW  = "31";
+			break;
+		case 5:
+			textwaistToW  = "32";
+			break;
+		case 6:
+			textwaistToW  = "33";
+			break;
+		case 7:
+			textwaistToW  = "34";
+			break;
+		case 8:
+			textwaistToW  = "36";
+			break;
+		case 9:
+			textwaistToW  = "38";
+			break;
+		case 10:
+			textwaistToW  = "40";
+			break;
+		case 11:
+			textwaistToW  = "42";
+			break;
+	}
+}
+
+function growthToL () {
+	const growth = parseInt(document.getElementById("body-growth").value);
+
+	switch(growth) {
+		case 1:
+			textGrowthToL = "30";
+			break;
+		case 2:
+			textGrowthToL = "32";
+			break;
+		case 3:
+			textGrowthToL = "34";
+			break;
+		case 4:
+			textGrowthToL = "36";
 			break;
 	}
 }
