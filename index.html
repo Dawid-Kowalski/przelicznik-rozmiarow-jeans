@@ -25,29 +25,29 @@
 				<div class="form-group">
 					<label for="trousers-width">W</label>
 				    <select class="form-control" id="trousers-width">
-				      <option>28</option>
-				      <option>29</option>
-				      <option>30</option>
-				      <option>31</option>
-				      <option>32</option>
-				      <option>33</option>
-				      <option>34</option>
-				      <option>36</option>
-				      <option>38</option>
-				      <option>40</option>
-				      <option>42</option>
+				      <option value="28">28</option>
+				      <option value="29">29</option>
+				      <option value="30">30</option>
+				      <option value="31">31</option>
+				      <option value="32">32</option>
+				      <option value="33">33</option>
+				      <option value="34">34</option>
+				      <option value="36">36</option>
+				      <option value="38">38</option>
+				      <option value="40">40</option>
+				      <option value="42">42</option>
 				   	</select>
 				</div>
 				<div class="form-group">
 					<label for="trousers-lang">L</label>
 				    <select class="form-control" id="trousers-lang">
-				      <option>30</option>
-				      <option>32</option>
-				      <option>34</option>
-				      <option>36</option>
+				      <option value="30">30</option>
+				      <option value="32">32</option>
+				      <option value="34">34</option>
+				      <option value="36">36</option>
 				   	</select>
 				</div>
-				<button type="button" class="btn btn-success">przelicz</button>
+				<button type="button" class="btn btn-success" onclick="convertSizetoBody();">przelicz</button>
 			</form>
 		</div>
 		<div id="body-panel" hidden>
@@ -72,7 +72,7 @@
 				</div>
 				<div class="form-group">
 					<label for="growth">Wzrost:</label>
-				    <select class="form-control" id="growth">
+				    <select class="form-control" id="body-growth">
 				      <option>158-165.5</option>
 				      <option>165.5-173</option>
 				      <option>173-180.5</option>
@@ -81,6 +81,20 @@
 				</div>
 				<button type="button" class="btn btn-success">przelicz</button>
 			</form>
+		</div>
+		<div>
+			<h3>Te spodnie pasują na osobę o: </h3>
+			<p>obwodzie w pasie:</p>
+			<p id="waist">...</p>
+			<p>wzroście:</p>
+			<p id="growth">...</p>
+		</div>
+		<div>
+			<h3>Dla tej osoby odpowiednie będą spodnie o oznaczeniach: </h3>
+			<p>W:</p>
+			<p>...</p>
+			<p>L:</p>
+			<p>...</p>
 		</div>
 	</body>
 </html>
