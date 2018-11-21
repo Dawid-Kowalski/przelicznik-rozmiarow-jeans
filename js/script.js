@@ -23,6 +23,9 @@ function showForm() {
 
 function convertSizetoBody() {
 
+	document.getElementById("body-panel-results").hidden = false;
+	document.getElementById("size-panel-results").hidden = true;
+
 	const waist = document.getElementById("waist");
 	const growth = document.getElementById("growth");
 
@@ -94,6 +97,9 @@ function lToGrowth () {
 }
 
 function convertBodyToSize() {
+
+	document.getElementById("body-panel-results").hidden = true;
+	document.getElementById("size-panel-results").hidden = false;
 
 	const width = document.getElementById("width");
 	const lang = document.getElementById("lang");
